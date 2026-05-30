@@ -1,4 +1,4 @@
-# 🤟 Sign Language Translator
+# Sign Language Translator
 
 > A comprehensive full-stack application that translates between **Indian Sign Language (ISL)** and **English text** in real-time.
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 🎯 Quick Start (5 Minutes)
+## Quick Start (5 Minutes)
 
 ### Prerequisites
 - **Python 3.10+** ([Download](https://www.python.org/downloads/))
@@ -39,25 +39,25 @@ npm install
 npm run dev
 ```
 
-✅ **Backend running on:** `http://localhost:5000`  
-✅ **Frontend running on:** `http://localhost:5173`
+**Backend running on:** `http://localhost:5000`  
+**Frontend running on:** `http://localhost:5173`
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
-| 🔤 **Text to ISL** | Convert English text → Sign language videos |
-| 📹 **ISL to Text** | Recognize signs from video/images → English text |
-| 🧠 **NLP Pipeline** | Advanced linguistic processing & transformation |
-| ⚡ **Real-time Processing** | Fast inference with optimized models |
-| 🎬 **Video Player** | Speed control, progress tracking, smooth playback |
-| 📱 **Responsive UI** | Mobile-friendly interface with Tailwind CSS |
+| **Text to ISL** | Convert English text → Sign language videos |
+| **ISL to Text** | Recognize signs from video/images → English text |
+| **NLP Pipeline** | Advanced linguistic processing & transformation |
+| **Real-time Processing** | Fast inference with optimized models |
+| **Video Player** | Speed control, progress tracking, smooth playback |
+| **Responsive UI** | Mobile-friendly interface with Tailwind CSS |
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 sign_language_translator-backend/
@@ -132,7 +132,7 @@ sign_language_translator-frontend/
 └── eslint.config.js
 ```
 
-## 🚀 Detailed Installation Guide
+## Detailed Installation Guide
 
 ### Backend Setup
 
@@ -189,7 +189,7 @@ npm run dev
 npm run build
 ```
 
-## ▶️ Running the Application
+## Running the Application
 
 ### Start Backend Server
 ```bash
@@ -227,7 +227,7 @@ npm run dev
 - **Backend API:** `http://localhost:5000`
 - **API Docs:** `http://localhost:5000/api/docs` (if Swagger configured)
 
-## 📦 Dependencies
+## Dependencies
 
 ### Backend Dependencies (`sign_language_translator-backend/requirements.txt`)
 
@@ -275,7 +275,7 @@ See `sign_language_translator-frontend/package.json` for complete list.
 - **Disk Space:** 5GB (3GB for Python packages + models)
 - **GPU:** Optional (CPU will work, slower inference)
 
-## 🔌 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Purpose |
 |--------|----------|---------|
@@ -344,24 +344,24 @@ npm test
 4. Push to the branch: `git push origin feature/your-feature`
 5. Submit a pull request
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend Issues
 
-**❌ "ModuleNotFoundError: No module named 'flask'"**
+**Error: "ModuleNotFoundError: No module named 'flask'"**
 - Solution: Virtual environment not activated
   ```bash
   .\venv\Scripts\Activate.ps1  # Windows
   source venv/bin/activate     # Mac/Linux
   ```
 
-**❌ "OSError: Can't find model 'en_core_web_sm'"**
+**Error: "OSError: Can't find model 'en_core_web_sm'"**
 - Solution: spaCy model not downloaded
   ```bash
   python -m spacy download en_core_web_sm
   ```
 
-**❌ "Address already in use" (port 5000)**
+**Error: "Address already in use" (port 5000)**
 - Solution: Kill existing process
   ```bash
   # Windows
@@ -372,7 +372,7 @@ npm test
   lsof -ti:5000 | xargs kill -9
   ```
 
-**❌ TensorFlow GPU errors**
+**Error: TensorFlow GPU errors**
 - Solution: Use CPU instead (add to app.py top)
   ```python
   import os
@@ -381,7 +381,7 @@ npm test
 
 ### Frontend Issues
 
-**❌ "Module not found" errors**
+**Error: "Module not found" errors**
 - Solution: Reinstall dependencies
   ```bash
   rm -r node_modules
@@ -389,13 +389,13 @@ npm test
   npm run dev
   ```
 
-**❌ Port 5173 already in use**
+**Error: Port 5173 already in use**
 - Solution: Use different port
   ```bash
   npm run dev -- --port 3000
   ```
 
-**❌ CORS errors when calling backend**
+**Error: CORS errors when calling backend**
 - Solution: Ensure backend is running
   ```bash
   cd sign_language_translator-backend
@@ -404,17 +404,17 @@ npm test
 
 ### Model Issues
 
-**❌ "isl_model.h5 not found"**
+**Error: "isl_model.h5 not found"**
 - Verify file exists: `sign_language_translator-backend/ISL_text/isl_model.h5`
 - Check disk space (model is ~50MB)
 
-**❌ Out of memory errors**
+**Error: Out of memory errors**
 - Reduce batch size in model configuration
 - Close other applications to free RAM
 
 ### System Issues
 
-**❌ Python/Node version mismatch**
+**Error: Python/Node version mismatch**
 ```bash
 # Check versions
 python --version    # Should be 3.10+
@@ -422,7 +422,7 @@ node --version      # Should be 16+
 npm --version       # Should be 8+
 ```
 
-**❌ "Permission denied" errors (Mac/Linux)**
+**Error: "Permission denied" errors (Mac/Linux)**
 ```bash
 chmod +x venv/bin/activate
 chmod -R 755 node_modules
