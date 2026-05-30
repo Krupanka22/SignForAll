@@ -1,0 +1,59 @@
+# ============================================================================
+# SIGN LANGUAGE TRANSLATOR - BACKEND DEPENDENCIES
+# ============================================================================
+# Python 3.10+ Required
+# Total Installation Size: ~3GB (including TensorFlow & models)
+# Installation Time: 5-15 minutes
+# ============================================================================
+
+# ============================================================================
+# WEB FRAMEWORK & API
+# ============================================================================
+Flask==3.1.0                  # Lightweight web framework for building REST APIs
+flask-cors==5.0.1             # Enable Cross-Origin Resource Sharing (CORS)
+
+# ============================================================================
+# MACHINE LEARNING & DEEP LEARNING
+# ============================================================================
+tensorflow==2.19.0            # Deep learning framework (includes Keras)
+numpy==1.26.4                 # Numerical computing library
+scikit-learn==1.6.1           # Machine learning utilities & algorithms
+
+# ============================================================================
+# COMPUTER VISION & POSE DETECTION
+# ============================================================================
+opencv-python==4.11.0.86      # Computer vision library for image/video processing
+mediapipe==0.10.21            # Hand & pose detection framework by Google
+
+# ============================================================================
+# NATURAL LANGUAGE PROCESSING (NLP)
+# ============================================================================
+spacy==3.8.4                  # Industrial NLP library (requires: python -m spacy download en_core_web_sm)
+textblob==0.17.1              # Simple API for common NLP tasks
+lemminflect==0.2.3            # Lemmatization & word inflection
+
+# ============================================================================
+# UTILITIES
+# ============================================================================
+requests==2.32.3              # HTTP client library for API calls
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+# 1. Create virtual environment:
+#    python -m venv venv
+#
+# 2. Activate virtual environment:
+#    Windows PowerShell: .\venv\Scripts\Activate.ps1
+#    Mac/Linux:         source venv/bin/activate
+#
+# 3. Install all dependencies:
+#    pip install --upgrade pip
+#    pip install -r requirements.txt
+#
+# 4. Download spaCy model:
+#    python -m spacy download en_core_web_sm
+#
+# 5. Run the application:
+#    python app.py
+# ============================================================================
